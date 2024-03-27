@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url(https://www.shutterstock.com/image-vector/field-cartoon-260nw-562531984.jpg);
+    
+    display: flex;
+    flex-direction:wrap-reverse;
+    justify-content:start;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+nav{
+    
+}display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+
+ul{
+    
+    display: flex;
+    justify-content:flex-end;
+    gap: 25px;
+    list-style: none;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50px;
+    right: 230px;
+
+}
+
+
+.img{
+    background: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    background-position: center;
+}
+.img_txt h1{
+    color: hsl(254, 49%, 8%);
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li{
+    cursor: pointer;
+}
+.img_txt h3{
+    color: hsl(254, 49%, 8%);
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.explore{
+    position: absolute;
+    top: 300px;
+    right: 600px;
+    background-color: rgba(44, 40, 255, 0.5);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.ship{
+
+position: absolute;
+top: 370px;
+left: 500px;
+animation-name: ship;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+}
+@keyframes ship{
+    0%{
+        right:50%;
+    }
+    50%{
+        left: 50;
+    }
+    100%{
+        left: 50%;
+    }
+    
+}
+
+
+.end_text h3{
+    color: hsl(254, 49%, 8%);
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.end_text h1{
+    color: hsl(254, 49%, 8%);
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transform: translateY(180px);
+}
+
+.slogan p {
+    color: var(--blue-child);
+    font-size: 20px;
+    font-family: var(--font-fam2);
+}
+
+.slogan h2 {
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--font-fam1);
+}
+
+.events {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transform: translateX(240px);
+    cursor: pointer;
+
+}
+
+.card {
+    width: calc(100% / var(--product-row-count) - var(--product-gap) - 
+    (var(--product-gap) / var(--product-row-count)));
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid wheat;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card .desc a {
+    color: var(--blue);
+    margin-top: 130px;
+}
+
+.card .desc h3 {
+    color: var(--blue-child);
+    color: blue;
+}
+
+.card .date {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card .date h4 {
+    color: var(--blue-child);
+}
+
+.card .date p {
+    color: var(--blue);
+    font-weight: 600;
+}
